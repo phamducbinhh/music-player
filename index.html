@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Music</title>
+</head>
+
+<body>
+    <div class="player">
+        <div class="wrapper ">
+            <div class="details">
+                <div class="now-playing">
+                    <i class="fa-solid fa-list list-music"></i>
+                    <h4>Music Player</h4>
+                </div>
+                <div class="track-art">
+                    <img src="./img/st-1.jpg" alt="" class="image-art">
+                </div>
+                <div class="track-name">Buông đôi tay nhau ra</div>
+                <div class="track-artist">Sơn Tùng MTP</div>
+            </div>
+
+            <div class="work_slide">
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="0" max="" value="0" class="seek_slider">
+                    <div class="total-duration">00:00</div>
+                </div>
+    
+                <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="0" max="100" value="100" class="volume_slider">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+    
+                <div class="buttons">
+                    <div class="random-track">
+                        <i class="fas fa-random fa-1x" title="random"></i>
+                    </div>
+                    <div class="prev-track">
+                        <i class="fa fa-step-backward fa-1x"></i>
+                    </div>
+                    <div class="playpause-track">
+                        <i class="fa fa-play-circle fa-2x icon-play "></i>
+                    </div>
+                    <div class="next-track">
+                        <i class="fa fa-step-forward fa-1x"></i>
+                    </div>
+                    <div class="repeat-track">
+                        <i class="fa fa-repeat fa-1x" title="repeat"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>
+
+            <div class="list-music-app">
+                <header>
+                    <i class="fa-solid fa-list-check checkout"></i>
+                    <h4 class="title_playlist">Music Playlist</h4>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </header>
+                <div class="playlist_song">
+                
+                </div>
+            </div>
+
+
+            <audio src="./music/buong.mp3" id="song"></audio>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
